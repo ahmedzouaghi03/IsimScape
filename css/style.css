@@ -93,7 +93,7 @@ body{
 }
 
 
-.play{
+.playy{
     flex-direction: column;
     display:flex;
     align-items: center;
@@ -101,7 +101,7 @@ body{
     top: 280px;
 
 }
-.play button{
+.playy button{
     background-image: url('../assets/images/playButton-19.png');
     background-size: 290px;
     background-repeat: no-repeat;
@@ -115,7 +115,7 @@ body{
     transition: transform 0.5s ease;
 }
 
-.play button:hover{
+.playy button:hover{
     transform: scale(1.1);
 }
 
