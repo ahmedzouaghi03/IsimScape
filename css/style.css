@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
 
 body{
-    background-image: url('../assets/images/interfaceFinal-06.png');
-    background-size: 580px;
+    background-image: url('../assets/images/aa-21-21-21.png');
+    background-size: 1850px;
+    background-color: black;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-position-y: 6px;
 }
 
 .title{
@@ -13,8 +15,8 @@ body{
     color: white;
     text-align: center;
     position: relative;
-    top: 80px;
-    font-size: 55px;
+    top: 10px;
+    font-size: 70px;
 }
 
 .buttons{
@@ -22,17 +24,17 @@ body{
     display:flex;
     align-items: center;
     position: relative;
-    top: 120px;
+    top: 10px;
 }
 
 .buttons button:nth-child(1){
-    background-image: url('../assets/images/play.png');
-    background-size: 200px;
+    background-image: url('../assets/images/aboutUs.png');
+    background-size: 260px;
     background-repeat: no-repeat;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     margin-bottom: 40px;
     border: 0px;
     background-color: transparent;
@@ -41,11 +43,11 @@ body{
 }
 .buttons button:nth-child(2){
     background-image: url('../assets/images/rules.png');
-    background-size: 200px;
+    background-size: 260px;
     background-repeat: no-repeat;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 35px;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
     padding-bottom: 35px;
     margin-bottom: 40px;
     border: 0px;
@@ -55,12 +57,12 @@ body{
 }
 .buttons button:nth-child(3){
     background-image: url('../assets/images/characters.png');
-    background-size: 200px;
+    background-size: 260px;
     background-repeat: no-repeat;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     border: 0px;
     background-color: transparent;
     cursor: pointer;
@@ -98,17 +100,17 @@ body{
     display:flex;
     align-items: center;
     position: relative;
-    top: 280px;
+    top: 128px;
 
 }
 .play button{
     background-image: url('../assets/images/playButton-19.png');
-    background-size: 290px;
+    background-size: 400px;
     background-repeat: no-repeat;
-    padding-right: 145px;
-    padding-left: 145px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     border: 0px;
     background-color: transparent;
     cursor: pointer;
@@ -116,19 +118,18 @@ body{
 }
 
 .play button:hover{
-    transform: scale(1.1);
+    transform: scale(1.09);
 }
 
 .topelements{
-
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 .topelements img:nth-child(1){
-    width: 60px;
+    width: 70px;
     position: relative;
-    left: 40%;
+    left: 11%;
     top: 80px;
     transition: transform 0.5s ease;
 }
@@ -137,8 +138,8 @@ body{
     cursor: pointer;
 }
 .topelements img:nth-child(2){
-    width: 60px;
+    width: 80px;
     position: relative;
-    left: 54%;
+    left: 80%;
     top: 70px;
 }
