@@ -142,3 +142,6 @@ body{
     left: 54%;
     top: 70px;
 }
+audio{
+    display: none;
+}
