@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
 
 body{
-    background-image: url('../assets/images/interfaceFinal-06.png');
-    background-size: 580px;
+    background-image: url('../assets/images/aa-21-21-21.png');
+    background-size: 1850px;
+    background-color: black;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-position-y: 6px;
 }
 
 .title{
@@ -13,8 +15,8 @@ body{
     color: white;
     text-align: center;
     position: relative;
-    top: 80px;
-    font-size: 55px;
+    top: 10px;
+    font-size: 70px;
 }
 
 .buttons{
@@ -22,17 +24,17 @@ body{
     display:flex;
     align-items: center;
     position: relative;
-    top: 120px;
+    top: 10px;
 }
 
 .buttons button:nth-child(1){
-    background-image: url('../assets/images/play.png');
-    background-size: 200px;
+    background-image: url('../assets/images/aboutUs.png');
+    background-size: 260px;
     background-repeat: no-repeat;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     margin-bottom: 40px;
     border: 0px;
     background-color: transparent;
@@ -41,11 +43,11 @@ body{
 }
 .buttons button:nth-child(2){
     background-image: url('../assets/images/rules.png');
-    background-size: 200px;
+    background-size: 260px;
     background-repeat: no-repeat;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 35px;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
     padding-bottom: 35px;
     margin-bottom: 40px;
     border: 0px;
@@ -55,12 +57,12 @@ body{
 }
 .buttons button:nth-child(3){
     background-image: url('../assets/images/characters.png');
-    background-size: 200px;
+    background-size: 260px;
     background-repeat: no-repeat;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     border: 0px;
     background-color: transparent;
     cursor: pointer;
@@ -76,19 +78,19 @@ body{
 .buttons button:nth-child(3):hover{
     transform: scale(1.2);
 }
-.buttons button:nth-child(1):focus{
+.buttons button:nth-child(1):active{
     transform: scale(1.2);
 }
-.buttons button:nth-child(2):focus{
+.buttons button:nth-child(2):active{
     transform: scale(1.3);
 }
-.buttons button:nth-child(1):focus{
+.buttons button:nth-child(1):active{
     transform: scale(1.3);
 }
-.buttons button:nth-child(2):focus{
+.buttons button:nth-child(2):active{
     transform: scale(1.3);
 }
-.buttons button:nth-child(3):focus{
+.buttons button:nth-child(3):active{
     transform: scale(1.3);
 }
 
@@ -98,17 +100,17 @@ body{
     display:flex;
     align-items: center;
     position: relative;
-    top: 280px;
+    top: 128px;
 
 }
 .play button{
     background-image: url('../assets/images/playButton-19.png');
-    background-size: 290px;
+    background-size: 400px;
     background-repeat: no-repeat;
-    padding-right: 145px;
-    padding-left: 145px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     border: 0px;
     background-color: transparent;
     cursor: pointer;
@@ -116,19 +118,18 @@ body{
 }
 
 .play button:hover{
-    transform: scale(1.1);
+    transform: scale(1.09);
 }
 
 .topelements{
-
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 .topelements img:nth-child(1){
-    width: 60px;
+    width: 70px;
     position: relative;
-    left: 40%;
+    left: 11%;
     top: 80px;
     transition: transform 0.5s ease;
 }
@@ -137,11 +138,273 @@ body{
     cursor: pointer;
 }
 .topelements img:nth-child(2){
-    width: 60px;
+    width: 80px;
     position: relative;
-    left: 54%;
+    left: 80%;
     top: 70px;
 }
 audio{
     display: none;
+}
+
+.characters{
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    left: 37.1%;
+    display: flex;
+    visibility: hidden;
+    background-image:url(../assets/images/charactersBackground-01-02.png) ;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.selector, .selectButton {
+  flex: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}  
+
+.selector{
+    margin-top: 10px;
+}
+
+.selector img:nth-child(1){
+    width: 40px;
+    margin-left: 32px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.selector img:nth-child(1):hover{
+    transform: scale(1.1);
+}
+.selector img:nth-child(1):active{
+    transform: scale(1.15);
+}
+.selector img:nth-child(2){
+    width: 300px;
+    margin: 80px 0;
+    transition: transform 0.5s ease;
+}
+.selector img:nth-child(3){
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.selector img:nth-child(3):hover{
+    transform: scale(1.1);
+}
+.selector img:nth-child(3):active{
+    transform: scale(1.15);
+}
+
+.selectButton button{
+    background-image: url('../assets/images/close.png');
+    background-size: 260px;
+    background-repeat: no-repeat;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.selectButton button:hover{
+    transform: scale(1.1);
+}   
+.selectButton button:active{
+    transform: scale(1.15);
+}
+.closeButton img{
+    position: relative;
+    width: 50px;
+    cursor: pointer;
+    top: 40px;
+    left: 85%;
+    transition: transform 0.3s ease;
+}
+.closeButton img:hover{
+    transform: scale(1.1);
+}   
+.closeButton img:active{
+    transform: scale(1.15);
+}
+
+.aboutUs{
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    left: 37.1%;
+    text-align: center;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    visibility:hidden;
+    background-image:url(../assets/images/charactersBackground-01-02.png) ;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+.aboutUsCloseButton img{
+    position: relative;
+    width: 50px;
+    cursor: pointer;
+    top: 40px;
+    left: 7%;
+    transition: transform 0.3s ease;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.aboutUsCloseButton img:hover{
+    transform: scale(1.1);
+}   
+.aboutUsCloseButton img:active{
+    transform: scale(1.15);
+}
+.title, .description {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }  
+.aboutUs h1{
+    position: absolute;
+    left: 21%;
+    font-family: 'Chakra Petch';
+    font-size: 40px;
+    font-weight: 700;
+    color: aliceblue;
+    bottom: 60%;
+}
+.aboutUs p{
+    position: absolute;
+    left: 8%;
+    font-family: 'Chakra Petch';
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+    bottom: 10%;
+    margin-bottom: 200px;
+}
+.AboutUsSecondCloseButton button{
+    background-image: url('../assets/images/close.png');
+    background-size: 260px;
+    background-repeat: no-repeat;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border: 0px;
+    position: relative;
+    right: 120px;
+    bottom: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.AboutUsSecondCloseButton button:hover{
+    transform: scale(1.1);
+}   
+.AboutUsSecondCloseButton button:active{
+    transform: scale(1.15);
+}
+
+
+/*aaaa*/ 
+.rules{
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    left: 37.1%;
+    text-align: center;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    visibility:hidden;
+    background-image:url(../assets/images/charactersBackground-01-02.png) ;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+.rulesCloseButton img{
+    position: relative;
+    width: 50px;
+    cursor: pointer;
+    top: 40px;
+    left: 7%;
+    transition: transform 0.3s ease;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.rulesCloseButton img:hover{
+    transform: scale(1.1);
+}   
+.rulesCloseButton img:active{
+    transform: scale(1.15);
+}
+.title, .description {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }  
+.rules h1{
+    position: absolute;
+    left: 26%;
+    font-family: 'Chakra Petch';
+    font-size: 40px;
+    font-weight: 700;
+    color: aliceblue;
+    bottom: 60%;
+}
+.rules p{
+    position: absolute;
+    left: 8%;
+    font-family: 'Chakra Petch';
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+    bottom: 10%;
+    margin-bottom: 200px;
+}
+.rulesSecondCloseButton button{
+    background-image: url('../assets/images/close.png');
+    background-size: 260px;
+    background-repeat: no-repeat;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border: 0px;
+    position: relative;
+    right: 120px;
+    bottom: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.rulesSecondCloseButton button:hover{
+    transform: scale(1.1);
+}   
+.rulesSecondCloseButton button:active{
+    transform: scale(1.15);
 }
