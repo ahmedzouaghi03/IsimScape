@@ -1,0 +1,157 @@
+body{
+    background-image: url('../assets/images/aa-21.png');
+    background-size: 1850px;
+    
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 6px;
+}
+
+.topelements{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.topelements img:nth-child(1){
+    width: 70px;
+    position: relative;
+    left: 11%;
+    top: 80px;
+    transition: transform 0.5s ease;
+}
+.topelements img:nth-child(1):hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.topelements img:nth-child(2){
+    width: 70px;
+    position: relative;
+    left: 81%;
+    top: 80px;
+    transition: transform 0.5s ease;
+}
+.topelements img:nth-child(2):hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+audio{
+    display: none;
+}
+
+.aboutUs{
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    left: 37.1%;
+    text-align: center;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    visibility:hidden;
+    background-image:url(../assets/images/charactersBackground-01-02.png) ;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+.aboutUsCloseButton img{
+    position: fixed;
+    width: 50px;
+    cursor: pointer;
+    top: 12%;
+    left: 59%;
+    transition: transform 0.3s ease;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.aboutUsCloseButton img:hover{
+    transform: scale(1.1);
+}   
+.aboutUsCloseButton img:active{
+    transform: scale(1.15);
+}
+.title, .description {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }  
+.aboutUs h1{
+    position: absolute;
+    left: 24%;
+    font-family: 'Chakra Petch';
+    font-size: 70px;
+    font-weight: 700;
+    color: aliceblue;
+    bottom: 70%;
+}
+.aboutUs p{
+    position: absolute;
+    left: 9%;
+    font-family: 'Chakra Petch';
+    font-size:27px;
+    font-weight: 200;
+    color: aliceblue;
+    bottom: 30%;
+    margin-bottom: 200px;
+}
+.AboutUsSecondCloseButton button{
+    background-image: url('../assets/images/exit.png');
+    background-size: 260px;
+    background-repeat: no-repeat;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border: 0px;
+    position: relative;
+    right: 130px;
+    bottom: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.AboutUsSecondCloseButton button:hover{
+    transform: scale(1.1);
+}   
+.AboutUsSecondCloseButton button:active{
+    transform: scale(1.15);
+}
+
+#game-container {
+    position: relative;
+    width: 1500px;
+    height: 700px;
+    margin: 50px auto;
+    
+  }
+  
+  #player {
+    position: absolute;
+    width: 150px;
+    height: 230px;
+    background-image: url('../css/right_1.png'); /* Set the initial image */
+    background-size: cover;
+    /* Set initial position of the player */
+    left: 0;
+    
+    bottom: 20px;
+    animation: jumpAnimation 0.8s ease-in-out;
+  }
+  @keyframes jumpAnimation {
+    0% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 30px; /* Adjust the jump height */
+    }
+    100% {
+      bottom: 0;
+    }
+  }
